@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "name": "Mario",
+  "description": "Classic Mario",
+  "type": "Pop!",
+  "genre": "Videojuegos",
+  "franchise": "Super Mario",
+  "number": 1,
+  "exclusive": false,
+  "specialFeatures": "None",
+  "marketValue": 50
+}

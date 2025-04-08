@@ -1,0 +1,12 @@
+{
+  "id": 3,
+  "name": "Batman",
+  "description": "Dark Knight Returns version",
+  "type": "Vinyl Gold",
+  "genre": "Películas y TV",
+  "franchise": "DC Comics",
+  "number": 42,
+  "exclusive": true,
+  "specialFeatures": "Limited edition",
+  "marketValue": 200
+}
