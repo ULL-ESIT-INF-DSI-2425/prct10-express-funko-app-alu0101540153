@@ -1,0 +1,90 @@
+. Configurar tu Primer Request
+Abre una nueva pestaña:
+
+Haz clic en el botón "+" o en "New" > "Request"
+
+Configura el método HTTP:
+
+Selecciona el tipo de request (GET, POST, DELETE, etc.) del dropdown
+
+Ingresa la URL:
+
+Ejemplo: http://localhost:3000/libros?user=usuario1
+
+Configura los headers:
+
+Ve a la pestaña "Headers"
+
+Añade: Content-Type: application/json
+
+Para POST/PUT/PATCH:
+
+Ve a la pestaña "Body"
+
+Selecciona "raw"
+
+Elige "JSON" en el dropdown
+
+Escribe tu JSON, por ejemplo:
+
+json
+{
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "año": 1967,
+    "paginas": 432
+}
+4. Ejemplo Completo para Probar tu API
+Prueba 1: Añadir un libro
+
+Método: POST
+
+URL: http://localhost:3000/libros?user=usuario1
+
+Headers:
+
+Key: Content-Type
+Value: application/json
+Body (raw, JSON):
+
+json
+{
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "año": 1967,
+    "paginas": 432
+}
+Haz clic en "Send"
+
+Prueba 2: Obtener el libro añadido
+
+Método: GET
+
+URL: http://localhost:3000/libros?user=usuario1&id=1
+
+Haz clic en "Send"
+
+5. Alternativas si no Puedes Usar Postman
+Si tienes problemas con Postman, puedes usar:
+
+cURL (desde terminal):
+
+bash
+# GET
+curl "http://localhost:3000/libros?user=usuario1"
+
+# POST
+curl -X POST -H "Content-Type: application/json" -d '{"id":1,"titulo":"Cien años...","autor":"García Márquez"}' "http://localhost:3000/libros?user=usuario1"
+Extensiones de VSCode:
+
+REST Client (archivos .http)
+
+Thunder Client (similar a Postman)
+
+Navegador:
+
+Solo para GET: abre http://localhost:3000/libros?user=usuario1 en tu navegador
